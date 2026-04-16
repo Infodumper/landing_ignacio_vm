@@ -1,0 +1,219 @@
+/* 
+ * MAIN DESIGN SYSTEM: ADN-PI (Placas Independientes) (@Infodumper Portfolio)
+ * Basado en el esquema de /consultora - Arquitectura de 4 Capas
+ */
+
+:root {
+    /* Color Palette - Celestial Deep */
+    --bg-main: #030712;
+    --bg-card: rgba(17, 24, 39, 0.7);
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --accent: #2dd4bf; /* Teal soft */
+    --accent-glow: rgba(45, 212, 191, 0.2);
+    --grid-line: rgba(148, 163, 184, 0.05);
+    
+    /* Spacing & Borders */
+    --radius-lg: 1.5rem;
+    --radius-md: 0.75rem;
+    --container-max: 42rem;
+}
+
+/* Reset & Global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-image: 
+        linear-gradient(var(--grid-line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+
+/* Base Styles (The "PI" Foundation) */
+.container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+}
+
+/* Navigation (Sticky Header) */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    background: rgba(3, 7, 18, 0.85);
+    backdrop-filter: blur(12px);
+    position: sticky;
+    top: 15px;
+    z-index: 1000;
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    margin: 0 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.brand {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-decoration: none;
+    letter-spacing: -0.02em;
+}
+
+.brand span {
+    color: var(--text-primary);
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-left: 1.5rem;
+    transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+/* Hero Section */
+.hero {
+    padding: 5rem 0;
+    text-align: left;
+}
+
+.hero .overline {
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 5vw, 4.2rem);
+    line-height: 1.05;
+    margin-bottom: 2rem;
+    letter-spacing: -0.04em;
+    font-weight: 800;
+}
+
+.hero h1 span {
+    display: block;
+    color: var(--accent);
+    text-shadow: 0 0 30px var(--accent-glow);
+}
+
+.hero-subtitle {
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+    margin-bottom: 3.5rem;
+    max-width: 580px;
+}
+
+/* The Core "ADN-PI" (Project Card) */
+.project-card {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    padding: 2.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: 2.2rem;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(45, 212, 191, 0.4);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), 0 0 15px var(--accent-glow);
+}
+
+.project-card .badge {
+    display: inline-block;
+    background: rgba(45, 212, 191, 0.08);
+    color: var(--accent);
+    border: 1px solid rgba(45, 212, 191, 0.3);
+    padding: 6px 14px;
+    border-radius: 100px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+.project-card h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    letter-spacing: -0.02em;
+}
+
+.project-card p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+/* Feature tags */
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    list-style: none;
+}
+
+.tech-tag {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+/* Buttons and Interactions */
+.btn-primary {
+    background: var(--accent);
+    color: var(--bg-main);
+    padding: 1.1rem 2.8rem;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    display: inline-block;
+    box-shadow: 0 10px 25px var(--accent-glow);
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px var(--accent-glow);
+}
+
+/* Footer Section */
+footer {
+    margin-top: 8rem;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    padding: 5rem 0;
+    border-top: 1px solid var(--grid-line);
+}
