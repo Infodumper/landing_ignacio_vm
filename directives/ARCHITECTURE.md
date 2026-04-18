@@ -9,7 +9,7 @@ Esta directiva define la arquitectura modular del portfolio, orientada a la **Co
 ## 1. Capa Directiva (Objetivo y Alcance)
 
 - **Fase Actual**: Porfolio de Alta Fidelidad (2.0). 
-- **Marca**: @Infodumper / KAIZUNA.AI.
+- **Marca**: @Infodumper / KAIZUNA.COM.AR
 - **Diferencial**: Arquitectura de Sistemas Escalables y Orquestación de IA.
 - **Página de Inicio**: Producir impacto inmediato y agendar demo/conversación.
 
