@@ -1,0 +1,17 @@
+# Ignacio Vizoso - Portafolio y Servicios
+
+Este sitio representa los servicios profesionales de Ignacio Vizoso, especializado en construir soluciones de software empresariales eficientes utilizando metodologías robustas.
+
+## Resumen del Sitio
+- Sitio de presentación profesional y catálogo de servicios B2B.
+- Orientado a dueños de empresas, directores operativos y CEOs que buscan mejorar la estructura de sus datos, procesos operativos e IA.
+
+## Navegación y Secciones
+- `/index.html`: Home page con la propuesta de valor y acceso rápido a pilares y casos de éxito.
+- `/sobre-mi.html`: Perfil del autor, filosofía técnica y metodología (análisis, arquitectura, desarrollo, validación y despliegue).
+- `/soluciones/`: Directorio que contiene los distintos servicios ofrecidos (CRM, ERP, Agentes IA, Business Intelligence, Automatización, etc.).
+- `/casos/`: Ejemplos reales de implementación de sistemas donde se muestra el problema original y la solución arquitectónica implementada.
+- `/contacto.html`: Formulario directo de contacto profesional.
+
+## Notas sobre la arquitectura del sitio
+Este sitio web prioriza la velocidad y la simplicidad. Se han evitado deliberadamente frameworks de UI complejos y se utiliza HTML estático, CSS puro y un enfoque minimalista que refleja la filosofía técnica del autor: "Menos ruido, más funcionalidad."
