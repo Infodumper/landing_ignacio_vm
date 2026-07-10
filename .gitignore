@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Agent and prep files
+.agent/
+.tmp/
+directives/
+fix_links.py
+infodumper.md
