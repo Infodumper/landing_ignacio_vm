@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="@infodumper — Sistemas eficientes para negocios reales. Data Science e IA aplicada a PYMEs.">
-    <title>@infodumper | Sistemas eficientes para negocios reales</title>
+        content="Arquitectura de Software, Business Intelligence e Inteligencia Artificial para Empresas.">
+    <title>Ignacio Vizoso | Sistemas Empresariales</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,18 +20,18 @@
 <body>
     <nav class="glass-nav">
         <div class="nav-container">
-            <a href="#" class="brand">
-                <img src="styles/images/Logo.png" alt="@infodumper logo" class="logo-img" width="38" height="38">
-                @infodumper
+            <a href="index.html" class="brand">
+                <img src="styles/images/Logo.png" alt="Logo" class="logo-img" width="38" height="38" onerror="this.src='https://placehold.co/38x38/1a1a1e/fff?text=IV'">
+                Ignacio Vizoso
             </a>
             <div class="nav-links">
-                <a href="#proposito">PROPÓSITO</a>
-                <a href="#servicios">SERVICIOS</a>
-                <a href="#tecnologia">TECNOLOGÍA</a>
-                <a href="#sobre-mi">SOBRE MÍ</a>
+                <a href="soluciones/index.html">SOLUCIONES</a>
+                <a href="casos/index.html">CASOS</a>
+                <a href="blog/index.html">BLOG</a>
+                <a href="sobre-mi.html">SOBRE MÍ</a>
             </div>
             <div class="nav-actions">
-                <a href="#contacto" class="btn btn-primary btn-sm">CONTACTO</a>
+                <a href="contacto.html" class="btn btn-primary btn-sm">CONTACTO</a>
             </div>
         </div>
     </nav>
@@ -40,199 +40,124 @@
 
         <!-- Hero -->
         <section class="hero-section">
-            <div class="hero-content">
-                <span class="overline">TECNOLOGÍA APLICADA CON LÓGICA</span>
-                <h1>Sistemas que <em class="serif accent-text">funcionan</em>, no que complican.</h1>
+            <div class="hero-content" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <span class="overline">SISTEMAS EMPRESARIALES</span>
+                <h1 style="font-size: clamp(2.34rem, 6.3vw, 4.05rem);">Arquitectura de Software, <em class="serif accent-text">Business Intelligence</em> e IA para Empresas</h1>
                 <p class="hero-subtitle">
-                    Soluciones reales, no parches temporales. Analizo procesos, detecto fallos y construyo sistemas
-                    eficientes para que la tecnología trabaje para ti, no al revés.
+                    Ayudo a empresas a resolver problemas complejos mediante sistemas, datos e inteligencia artificial. Soluciones escalables que generan resultados reales.
                 </p>
-                <div class="hero-ctas">
-                    <a href="#contacto" class="btn btn-primary">EMPEZAR UNA CONVERSACIÓN</a>
-                    <a href="metodologia.html" class="btn btn-outline">CONOCER MI MÉTODO</a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="hero-img-container">
-                    <img src="styles/images/hero_peaceful.png" alt="Espacio de trabajo ordenado y profesional"
-                        loading="eager">
+                <div class="hero-ctas" style="justify-content: center;">
+                    <a href="contacto.html" class="btn btn-primary">AGENDAR UNA REUNIÓN</a>
                 </div>
             </div>
         </section>
 
-        <!-- Propósito -->
-        <section id="proposito" class="section-center">
-            <span class="overline">MI ENFOQUE</span>
-            <h2>Aporto <em class="serif">soluciones</em> <br>desarrollando <em class="serif">herramientas</em>.</h2>
-            <p class="section-lead">
-                Cada proyecto es distinto, pero la prioridad no cambia: que el sistema funcione bien, sea entendible y
-                se pueda mantener en el tiempo. Trabajo cómodo tanto desde lo técnico como en la lógica del negocio que
-                hay detrás.
-            </p>
+        <!-- Qué resuelvo -->
+        <section class="section-center" style="padding-top: 2rem;">
+            <span class="overline">QUÉ RESUELVO</span>
+            <h2>Tres pilares del crecimiento <em class="serif">sostenible</em></h2>
+            <div class="process-grid" style="grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem;">
+                <div class="process-item" style="text-align: left; padding: 2rem; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 12px;">
+                    <i class="fas fa-chart-line" style="font-size: 2rem; color: var(--accent); margin-bottom: 1rem;"></i>
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.25rem;">Ventas</h3>
+                    <p style="font-size: 0.95rem; color: var(--text-secondary);">Sistemas CRM, automatización de lead nurturing y analítica predictiva para cerrar más tratos.</p>
+                </div>
+                <div class="process-item" style="text-align: left; padding: 2rem; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 12px;">
+                    <i class="fas fa-cogs" style="font-size: 2rem; color: var(--accent); margin-bottom: 1rem;"></i>
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.25rem;">Operaciones</h3>
+                    <p style="font-size: 0.95rem; color: var(--text-secondary);">ERPs personalizados, gestión de stock y automatización de flujos de trabajo sin fricciones.</p>
+                </div>
+                <div class="process-item" style="text-align: left; padding: 2rem; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 12px;">
+                    <i class="fas fa-database" style="font-size: 2rem; color: var(--accent); margin-bottom: 1rem;"></i>
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.25rem;">Datos</h3>
+                    <p style="font-size: 0.95rem; color: var(--text-secondary);">Dashboards en tiempo real y Business Intelligence para toma de decisiones informadas.</p>
+                </div>
+            </div>
         </section>
 
-        <!-- Servicios -->
+        <!-- Servicios Destacados -->
         <section id="servicios">
             <div class="section-header">
-                <span class="overline">QUÉ HAGO</span>
-                <h2>Ayudo a ordenar, optimizar y crear<em class="serif"> sistemas</em> que <br> realmente
-                    <em class="serif"> funcionan.</em>
-                </h2>
+                <span class="overline">SERVICIOS DESTACADOS</span>
+                <h2>Soluciones que <em class="serif">escalan</em> con tu empresa</h2>
             </div>
             <div class="card-grid">
-                <div class="eleven-card">
+                <a href="soluciones/sistemas-empresariales.html" class="eleven-card" style="text-decoration: none; color: inherit;">
                     <div class="service-icon outline-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 2v4"></path>
-                            <path d="M12 18v4"></path>
-                            <path d="M4.93 4.93l2.83 2.83"></path>
-                            <path d="M16.24 16.24l2.83 2.83"></path>
-                            <path d="M2 12h4"></path>
-                            <path d="M18 12h4"></path>
-                            <path d="M4.93 19.07l2.83-2.83"></path>
-                            <path d="M16.24 7.76l2.83-2.83"></path>
-                            <circle cx="12" cy="12" r="5"></circle>
-                        </svg>
+                        <i class="fas fa-server"></i>
                     </div>
-                    <h3>Automatización</h3>
-                    <p>Automatización de procesos y optimización de flujos de trabajo para eliminar tareas repetitivas y
-                        errores humanos.</p>
-                </div>
-                <div class="eleven-card">
+                    <h3>Sistemas Empresariales</h3>
+                    <p>CRM, ERP, control de stock, compras y ventas centralizadas.</p>
+                </a>
+                <a href="soluciones/business-intelligence.html" class="eleven-card" style="text-decoration: none; color: inherit;">
                     <div class="service-icon outline-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="16 18 22 12 16 6"></polyline>
-                            <polyline points="8 6 2 12 8 18"></polyline>
-                        </svg>
+                        <i class="fas fa-chart-pie"></i>
                     </div>
-                    <h3>Desarrollo a medida</h3>
-                    <p>Construcción de herramientas específicas e integración entre plataformas que no se comunican
-                        entre sí.</p>
-                </div>
-                <div class="eleven-card">
+                    <h3>Business Intelligence</h3>
+                    <p>Dashboards, KPIs y reporting automatizado para visibilidad total.</p>
+                </a>
+                <a href="soluciones/inteligencia-artificial.html" class="eleven-card" style="text-decoration: none; color: inherit;">
                     <div class="service-icon outline-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="18" y1="20" x2="18" y2="10"></line>
-                            <line x1="12" y1="20" x2="12" y2="4"></line>
-                            <line x1="6" y1="20" x2="6" y2="14"></line>
-                        </svg>
+                        <i class="fas fa-brain"></i>
                     </div>
-                    <h3>Análisis de datos</h3>
-                    <p>Análisis de estructuras de datos y solución de problemas técnicos complejos desde una base
-                        lógica.</p>
-                </div>
+                    <h3>Inteligencia Artificial</h3>
+                    <p>Agentes inteligentes, automatización y análisis cognitivo.</p>
+                </a>
             </div>
         </section>
 
-        <!-- Cómo Trabajo -->
-        <section id="metodologia" class="section-center">
-            <span class="overline">CÓMO TRABAJO</span>
-            <h2>Mi forma de trabajar es <em class="serif">directa</em>.</h2>
-            <div class="process-grid">
-                <div class="process-item">
-                    <span class="step-num">01</span>
-                    <p>Entender el problema en profundidad.</p>
-                </div>
-                <div class="process-item">
-                    <span class="step-num">02</span>
-                    <p>Analizar las posibles soluciones.</p>
-                </div>
-                <div class="process-item">
-                    <span class="step-num">03</span>
-                    <p>Diseñar una estructura sólida.</p>
-                </div>
-                <div class="process-item">
-                    <span class="step-num">04</span>
-                    <p>Implementar de forma eficiente.</p>
-                </div>
+        <!-- Casos de Éxito Destacados -->
+        <section id="casos" class="section-center">
+            <span class="overline">RESULTADOS REALES</span>
+            <h2>Casos de <em class="serif">Éxito</em></h2>
+            <div class="card-grid" style="margin-top: 3rem; text-align: left;">
+                <a href="casos/crm-fidelizacion.html" class="eleven-card" style="text-decoration: none; color: inherit;">
+                    <span class="status-badge" style="margin-bottom: 1rem; display: inline-block;">CRM</span>
+                    <h3 style="font-size: 1.25rem;">Sistema de Fidelización</h3>
+                    <p>Aumento del 40% en retención de clientes mediante un CRM predictivo y automatizado.</p>
+                </a>
+                <a href="casos/dashboard-comercial.html" class="eleven-card" style="text-decoration: none; color: inherit;">
+                    <span class="status-badge" style="margin-bottom: 1rem; display: inline-block;">BI</span>
+                    <h3 style="font-size: 1.25rem;">Dashboard Comercial</h3>
+                    <p>Visibilidad en tiempo real de márgenes y ventas, reduciendo tiempos de reporte a cero.</p>
+                </a>
+                <a href="casos/consola-cognitiva.html" class="eleven-card" style="text-decoration: none; color: inherit;">
+                    <span class="status-badge" style="margin-bottom: 1rem; display: inline-block;">IA</span>
+                    <h3 style="font-size: 1.25rem;">Consola Cognitiva</h3>
+                    <p>Agentes de IA para clasificación de tickets, reduciendo el trabajo manual en un 80%.</p>
+                </a>
             </div>
-            <p class="section-lead" style="margin-top: 2rem;">
-                Evito soluciones innecesariamente complejas. Si algo se puede hacer más simple, se hace más simple.
-            </p>
-            <div class="pull-quote">
-                “Menos complejidad, más resultados.”
+            <div style="margin-top: 3rem;">
+                <a href="casos/index.html" class="btn btn-outline">VER TODOS LOS CASOS</a>
             </div>
         </section>
 
-        <!-- Experiencia del Cliente -->
-        <section class="split-section reverse">
-            <div class="split-content">
-                <span class="overline">EXPERIENCIA DEL CLIENTE</span>
-                <h2>Sistemas claros, procesos <br><em class="serif">sin fricciones</em>.</h2>
-                <div class="section-lead">
-                    <p>Detrás de cada sistema hay personas que lo usan. Por eso, el proceso está pensado para que todo
-                        sea ordenado y transparente.</p>
-                    <p>La comunicación es simple, sin tecnicismos innecesarios, y cada paso del proyecto tiene un
-                        propósito claro.</p>
-                </div>
-            </div>
-            <div class="split-visual glass-visual">
-                <div class="visual-box">
-                    <div class="visual-item"><i class="fas fa-check-circle"></i> Comunicación simple</div>
-                    <div class="visual-item"><i class="fas fa-check-circle"></i> Sin tecnicismos</div>
-                    <div class="visual-item"><i class="fas fa-check-circle"></i> Propósito claro</div>
-                </div>
+        <!-- Mi Enfoque (Diagrama) -->
+        <section class="section-center" style="background: rgba(255,255,255,0.02); padding: 4rem 2rem; border-radius: 12px; margin-top: 4rem;">
+            <span class="overline">MI ENFOQUE</span>
+            <h2>Del Caos a la <em class="serif">Claridad</em></h2>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; margin-top: 3rem; font-family: var(--font-mono, monospace); font-size: 1.1rem; color: var(--text-secondary);">
+                <div style="padding: 1rem 2rem; border: 1px solid var(--accent); border-radius: 8px; color: var(--text-main); background: rgba(var(--accent-rgb), 0.1);">1. Datos</div>
+                <i class="fas fa-arrow-down" style="color: var(--accent);"></i>
+                <div style="padding: 1rem 2rem; border: 1px solid var(--border); border-radius: 8px;">2. Procesos</div>
+                <i class="fas fa-arrow-down" style="color: var(--accent);"></i>
+                <div style="padding: 1rem 2rem; border: 1px solid var(--border); border-radius: 8px;">3. Automatización</div>
+                <i class="fas fa-arrow-down" style="color: var(--accent);"></i>
+                <div style="padding: 1rem 2rem; border: 1px solid var(--border); border-radius: 8px;">4. IA</div>
+                <i class="fas fa-arrow-down" style="color: var(--accent);"></i>
+                <div style="padding: 1rem 2rem; border: 1px solid var(--accent); border-radius: 8px; color: var(--text-main); font-weight: bold; background: rgba(var(--accent-rgb), 0.1);">5. Resultados</div>
             </div>
         </section>
 
-        <!-- Tech Stack -->
-        <section class="tech-stack" id="tecnologia">
-            <span class="overline">TECNOLOGÍAS</span>
-            <div class="stack-grid">
-                <div class="stack-item">Python & Automation</div>
-                <div class="stack-item">Custom Tools</div>
-                <div class="stack-item">Platform Integration</div>
-                <div class="stack-item">Data Architectures</div>
-                <div class="stack-item">Workflow Optimization</div>
-                <div class="stack-item">System Logic</div>
-            </div>
-        </section>
-
-        <!-- Perfil -->
-        <section id="sobre-mi" class="split-section">
-            <div class="split-visual">
-                <img src="styles/images/profile_portrait.png" alt="Ignacio Vizoso — Sistemas, Datos y Tecnología"
-                    loading="lazy">
-                <span class="status-badge">TECNOLOGÍA APLICADA</span>
-            </div>
-            <div class="split-content">
-                <span class="overline">SOBRE MÍ</span>
-                <h2>Precisión técnica con <br><em class="serif">enfoque práctico</em>.</h2>
-                <div class="section-lead">
-                    <p>Trabajo con sistemas, datos y tecnología desde un enfoque práctico: entender cómo funciona todo
-                        por dentro para resolver problemas de verdad, no solo “parcharlos”.</p>
-                    <p>Me especializo en analizar procesos, detectar fallos y construir soluciones eficientes. La
-                        precisión y la lógica son la base de mi trabajo. Aunque mi enfoque sea técnico, el objetivo
-                        siempre es claro: que las soluciones sean útiles, claras y sostenibles en el tiempo.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contacto -->
+        <!-- CTA Final -->
         <section id="contacto" class="section-contacto">
             <div class="section-center">
                 <span class="overline">HABLEMOS</span>
                 <h2>¿Empezamos a darle <em class="serif">forma</em> a tu proyecto?</h2>
-                <p>Una charla sin presiones para ver cómo puedo ayudarte.</p>
-            </div>
-            <div class="form-container">
-                <form id="contact-form" action="#" novalidate>
-                    <div class="form-row">
-                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required
-                            autocomplete="name">
-                        <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required
-                            autocomplete="email">
-                    </div>
-                    <textarea id="mensaje" name="mensaje"
-                        placeholder="Cuéntame un poco sobre tu situación actual o el proyecto que tienes en mente..."
-                        rows="5" required></textarea>
-                    <button type="submit" class="btn btn-primary btn-full">ENVIAR CONSULTA TÉCNICA</button>
-                    <p class="form-note">También puedes contactarme directamente vía <a href="#"
-                            class="accent-link">WhatsApp</a>.</p>
-                </form>
+                <p>Agenda una reunión sin compromisos para analizar la situación de tu negocio.</p>
+                <div style="margin-top: 2rem;">
+                    <a href="contacto.html" class="btn btn-primary btn-full" style="max-width: 300px; margin: 0 auto;">AGENDAR REUNIÓN</a>
+                </div>
             </div>
         </section>
 
@@ -241,38 +166,24 @@
     <footer class="minimal-footer">
         <div class="footer-container content-wrapper">
             <div class="footer-info">
-                <p class="footer-brand">© 2026 @infodumper en Kaizuna</p>
-                <p class="footer-tagline">Sistemas eficientes para negocios reales</p>
+                <p class="footer-brand">© 2026 Ignacio Vizoso</p>
+                <p class="footer-tagline">Sistemas, Datos e Inteligencia Artificial</p>
             </div>
             <nav class="social-links" aria-label="Redes sociales">
                 <a href="https://www.linkedin.com/in/ignacio-vizoso/" target="_blank" rel="noopener noreferrer"
                     title="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
                 <a href="https://github.com/Infodumper" target="_blank" rel="noopener noreferrer" title="GitHub"><i
                         class="fab fa-github" aria-hidden="true"></i></a>
-                <a href="#" title="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
             </nav>
         </div>
     </footer>
 
     <script>
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href === '#') return;
-                e.preventDefault();
-                const target = document.querySelector(href);
-                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            });
-        });
-
-        // Sticky nav shadow
         const nav = document.querySelector('.glass-nav');
         window.addEventListener('scroll', () => {
-            nav.style.boxShadow = window.scrollY > 50 ? '0 10px 40px rgba(0,0,0,0.3)' : 'none';
-            nav.style.background = window.scrollY > 50 ? 'rgba(26, 26, 30, 0.98)' : '#1a1a1e';
+            nav.style.boxShadow = window.scrollY > 50 ? '0 10px 40px rgba(0,0,0,0.05)' : 'none';
+            nav.style.background = window.scrollY > 50 ? 'rgba(255, 255, 255, 0.98)' : 'rgba(255, 255, 255, 0.85)';
         }, { passive: true });
     </script>
 </body>
-
 </html>

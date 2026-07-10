@@ -4,8 +4,6 @@
   "trailingSlash": false,
   "routes": [
     { "src": "/$", "dest": "/index.html" },
-    { "src": "/metodologia", "dest": "/metodologia.html" },
-    { "src": "/gestion-inteligente", "dest": "/gestion-inteligente.html" },
     { "src": "/(.*)", "dest": "/$1" }
   ],
   "headers": [

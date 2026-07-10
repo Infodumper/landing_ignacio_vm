@@ -4,25 +4,25 @@
    ================================================ */
 
 :root {
-    /* Paleta Dark Mode Premium */
-    --bg-main:          #0d0d0f;
-    --bg-surface:       #16161a;
-    --bg-glass:         rgba(22, 22, 26, 0.8);
+    /* Paleta Light Mode Profesional */
+    --bg-main:          #f0f5f1; /* Verde MUY claro y no brillante */
+    --bg-surface:       #f7faf8;
+    --bg-glass:         rgba(240, 245, 241, 0.85);
     
-    --text-primary:     #f8fafc;
-    --text-secondary:   #94a3b8;
-    --text-muted:       #64748b;
+    --text-primary:     #1a241f; /* Ajustado ligeramente hacia un tono oscuro verdoso/neutro */
+    --text-secondary:   #4a5c53;
+    --text-muted:       #8a9c92;
     
-    --accent:           #e2b342; /* Ocre más luminoso para el fondo oscuro */
-    --accent-hover:     #f3c252;
-    --accent-muted:     rgba(226, 179, 66, 0.1);
+    --accent:           #2b7a4b; /* Verde corporativo neutro */
+    --accent-hover:     #22623c;
+    --accent-muted:     rgba(43, 122, 75, 0.08);
     
-    --grafito:          #f8fafc; /* Reasignado para compatibilidad con selectores viejos */
+    --grafito:          #1a241f;
     --ocre:             var(--accent);
     
-    --card-bg:          #1b1b21;
-    --card-border:      rgba(255, 255, 255, 0.06);
-    --card-shadow:      0 20px 40px rgba(0, 0, 0, 0.4);
+    --card-bg:          #f7faf8;
+    --card-border:      rgba(0, 0, 0, 0.06);
+    --card-shadow:      0 12px 30px rgba(0, 0, 0, 0.04);
 
     /* Espaciado y radios */
     --radius-lg: 2.5rem;
@@ -80,7 +80,7 @@ p {
 
 em.serif { 
     font-style: italic; 
-    background: linear-gradient(120deg, var(--accent) 0%, #fff 100%);
+    background: linear-gradient(120deg, var(--accent) 0%, #1e40af 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -135,10 +135,10 @@ section { padding: 4rem 0; }
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: #1a1a1e; /* Fondo gris oscuro solicitado */
+    background: var(--bg-glass);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid var(--card-border);
     transition: var(--transition-base);
 }
 .nav-container {
@@ -164,9 +164,9 @@ section { padding: 4rem 0; }
     height: 48px; 
     width: 48px; 
     border-radius: 50%; 
-    border: 2px solid rgba(255,255,255,0.1); /* Ajustado para fondo oscuro */
+    border: 2px solid var(--card-border);
     object-fit: cover;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.4); 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05); 
 }
 .nav-links {
     display: flex;
@@ -258,14 +258,14 @@ section { padding: 4rem 0; }
     letter-spacing: 0.02em;
 }
 .btn-primary {
-    background: linear-gradient(135deg, var(--accent) 0%, #c1952e 100%);
-    color: #000;
+    background: linear-gradient(135deg, var(--accent) 0%, #1e40af 100%);
+    color: #ffffff;
     border: none;
-    box-shadow: 0 4px 15px rgba(226, 179, 66, 0.2);
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
 }
 .btn-primary:hover {
     transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 10px 25px rgba(226, 179, 66, 0.4);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
     filter: brightness(1.1);
 }
 .btn-outline {
@@ -274,7 +274,7 @@ section { padding: 4rem 0; }
     color: var(--text-primary);
 }
 .btn-outline:hover {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0.03);
     border-color: var(--text-primary);
     transform: translateY(-3px);
 }
@@ -303,13 +303,13 @@ section { padding: 4rem 0; }
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: radial-gradient(circle at top right, rgba(226, 179, 66, 0.05), transparent 70%);
+    background: radial-gradient(circle at top right, rgba(37, 99, 235, 0.04), transparent 70%);
     pointer-events: none;
 }
 .eleven-card:hover {
     transform: translateY(-12px);
     box-shadow: var(--card-shadow);
-    border-color: rgba(226, 179, 66, 0.3);
+    border-color: rgba(37, 99, 235, 0.2);
 }
 .service-icon {
     width: 64px;
@@ -322,12 +322,12 @@ section { padding: 4rem 0; }
 .outline-icon {
     background: transparent;
     color: var(--accent);
-    filter: drop-shadow(0 0 10px rgba(226, 179, 66, 0.1));
+    filter: drop-shadow(0 0 10px rgba(37, 99, 235, 0.1));
     transition: var(--transition-base);
 }
 .eleven-card:hover .outline-icon {
     transform: scale(1.1) rotate(5deg);
-    filter: drop-shadow(0 0 15px rgba(226, 179, 66, 0.3));
+    filter: drop-shadow(0 0 15px rgba(37, 99, 235, 0.2));
 }
 .outline-icon svg {
     width: 100%;
@@ -442,13 +442,13 @@ section { padding: 4rem 0; }
 }
 .process-item {
     padding: 2rem;
-    background: rgba(255, 255, 255, 0.02);
+    background: rgba(0, 0, 0, 0.02);
     border-radius: var(--radius-md);
     border: 1px solid var(--card-border);
     transition: var(--transition-base);
 }
 .process-item:hover {
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(0, 0, 0, 0.04);
     border-color: var(--accent-muted);
     transform: translateY(-5px);
 }
@@ -474,7 +474,7 @@ section { padding: 4rem 0; }
     display: flex;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(circle at center, rgba(226, 179, 66, 0.1), transparent 70%);
+    background: radial-gradient(circle at center, rgba(37, 99, 235, 0.05), transparent 70%);
     min-height: 350px;
     border-radius: var(--radius-lg);
 }
@@ -621,7 +621,7 @@ input, textarea, select {
     padding: 1.1rem 1.4rem;
     border-radius: 1rem;
     border: 1px solid var(--card-border);
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(0, 0, 0, 0.02);
     font-family: var(--font-body);
     font-size: 1rem;
     margin-bottom: 1.5rem;
@@ -634,8 +634,8 @@ input::placeholder, textarea::placeholder {
 input:focus, textarea:focus {
     outline: none;
     border-color: var(--accent);
-    background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 0 0 4px rgba(226, 179, 66, 0.1);
+    background: rgba(0, 0, 0, 0.04);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
 }
 .form-note {
     font-size: 0.8rem;
@@ -649,7 +649,7 @@ input:focus, textarea:focus {
 .minimal-footer {
     padding: 6rem 0 4rem;
     border-top: 1px solid var(--card-border);
-    background: #09090b;
+    background: var(--bg-surface);
 }
 .footer-container {
     display: flex;
