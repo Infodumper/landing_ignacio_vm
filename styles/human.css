@@ -39,13 +39,15 @@
 
 /* === RESET === */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+site-header { display: block; position: sticky; top: 0; z-index: 1000; }
+site-footer { display: block; }
 
 body {
     background-color: var(--bg-main);
     color: var(--text-primary);
     font-family: var(--font-body);
     line-height: 1.6;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 img { max-width: 100%; display: block; }
@@ -647,7 +649,7 @@ input:focus, textarea:focus {
 
 /* === FOOTER === */
 .minimal-footer {
-    padding: 6rem 0 4rem;
+    padding: 1.5rem 0;
     border-top: 1px solid var(--card-border);
     background: var(--bg-surface);
 }
@@ -666,18 +668,35 @@ input:focus, textarea:focus {
 }
 .footer-tagline {
     font-size: 0.82rem;
-    opacity: 0.55;
+    opacity: 0.75;
+    color: var(--accent);
     margin: 0;
 }
 .social-links { display: flex; gap: 1.5rem; }
 .social-links a {
     text-decoration: none;
-    color: var(--grafito);
     font-size: 1.4rem;
-    opacity: 0.45;
-    transition: opacity 0.2s, color 0.2s, transform 0.2s;
+    opacity: 0.8;
+    transition: opacity 0.2s, transform 0.2s;
 }
-.social-links a:hover { opacity: 1; color: var(--accent); transform: translateY(-5px) scale(1.1); }
+.social-links a .fa-linkedin { color: #0077b5; }
+.social-links a .fa-github { color: #171515; }
+.social-links a:hover { opacity: 1; transform: translateY(-5px) scale(1.1); }
+
+/* === MENU TOGGLE === */
+.menu-toggle {
+    background: transparent;
+    border: none;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    padding: 0.5rem;
+    transition: var(--transition-base);
+}
+.menu-toggle:hover {
+    color: var(--accent);
+}
 
 /* === RESPONSIVE === */
 @media (max-width: 968px) {
@@ -697,7 +716,36 @@ input:focus, textarea:focus {
     .hero-subtitle { margin: 0 auto 2.5rem; }
     .hero-ctas { justify-content: center; }
 
-    .nav-links { display: none; }
+    .menu-toggle { display: block; }
+    .nav-links { 
+        display: none; 
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: auto;
+        width: 60%;
+        background: var(--bg-surface);
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 2rem;
+        gap: 1.5rem;
+        border-bottom: 1px solid var(--card-border);
+        border-left: 1px solid var(--card-border);
+        border-bottom-left-radius: 1rem;
+        box-shadow: -5px 10px 30px rgba(0,0,0,0.05);
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links a {
+        font-size: 1.15rem;
+        color: var(--accent-hover);
+        opacity: 1;
+        font-weight: 600;
+    }
+
     .nav-container { padding: 1rem 1.5rem; width: 100%; }
 
     .split-content { text-align: center; }
@@ -792,3 +840,42 @@ input:focus, textarea:focus {
     .btn { width: 100%; }
     .hero-ctas { flex-direction: column; width: 100%; }
 }
+
+
+/* === WHATSAPP FLOAT === */
+.whatsapp-float {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+    z-index: 9999;
+    transition: var(--transition-base);
+    text-decoration: none;
+}
+.whatsapp-float:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 25px rgba(37, 211, 102, 0.4);
+    color: white;
+}
+@media (max-width: 768px) {
+    .whatsapp-float {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+}
+
+/* === UTILITIES === */
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

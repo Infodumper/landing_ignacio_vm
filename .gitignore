@@ -26,6 +26,8 @@ dist-ssr
 # Agent and prep files
 .agent/
 .tmp/
+.env
+.env.*
 directives/
 fix_links.py
 infodumper.md
