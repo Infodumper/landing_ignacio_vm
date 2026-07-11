@@ -12,7 +12,7 @@ class SiteHeader extends HTMLElement {
                 <a href="${basePath}index.html" class="brand">
                     <img src="${basePath}styles/images/Logo.png" alt="Logo" class="logo-img" width="38" height="38"
                         onerror="this.src='https://placehold.co/38x38/1a1a1e/fff?text=IV'">
-                    Ignacio Vizoso
+                    Ignacio <em class="serif">Vizoso</em>
                 </a>
                 
                 <button class="menu-toggle" aria-label="Abrir menú" onclick="this.nextElementSibling.classList.toggle('active');">
